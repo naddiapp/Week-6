@@ -6,14 +6,12 @@ public class Selection2Exp122 {
         System.out.print("Input year= ");
         year = input22.nextInt();
 
-        if (year%4 == 0) {
-            if (year%100 != 0) {
-                if ((year%400) == 0);
+        if (year%4 == 0) 
+            if (year%100 == 0 && year%400 ==0) 
                  System.out.println("Leap year");
-            }else {
+            else 
                  System.out.println("Not a leap year");
-            }
-        } else
+        else
             System.out.println("Not a leap year");
     }
 }

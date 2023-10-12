@@ -11,14 +11,14 @@ public class Selection2Exp322 {
         System.out.print("Input income = ");
         income = input22.nextInt();
 
-        if(category.equalsIgnoreCase("worker")){
+        if(category.equals("worker")){
             if(income <= 2000000)
                 tax = 0.1;
             else if(income <= 3000000)
                 tax = 0.15;
             netSalary = (int) (income - (tax*income));
             System.out.println("Net salary = "+netSalary);
-        }else if(category.equalsIgnoreCase("businessman")){
+        }else if(category.equals("businessman")){
             if(income <= 2500000)
                 tax = 0.15;
             else if(income <= 3500000)
